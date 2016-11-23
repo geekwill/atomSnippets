@@ -1,0 +1,56 @@
+{
+  ".source.js":
+
+    "reactnative: init reactnative":
+      "prefix": "imr"
+      "body": """
+        import React, { Component } from 'react';
+        import { View, Text, Image${1} } from 'react-native';
+        ${2}
+      """
+
+    "reactnative: export default class component":
+      "prefix": "edcc"
+      "body": """
+        export default class ${1} extends Component{
+          render(
+            return(
+              ${2}
+            );
+          )
+        }
+      """
+
+    "reactnative: export class component":
+      "prefix": "ecc"
+      "body": """
+        export class ${1} extends Component{
+          render(
+            return(
+              ${2}
+            );
+          )
+        }
+      """
+
+    "reactnative: create class component":
+      "prefix": "cc"
+      "body": """
+        class ${1} extends Component{
+          render(
+            return(
+              ${2}
+            );
+          )
+        }
+      """
+
+    "reactnative: function constructor":
+      "prefix": "cst"
+      "body": """
+        constructor( props ){
+          super( props );
+          ${1}
+        }
+      """
+}
