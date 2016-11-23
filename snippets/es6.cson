@@ -1,0 +1,32 @@
+{
+  ".source.js":
+    "es6: import component":
+      "prefix": "i"
+      "body": """
+        import '${1}'
+      """
+
+    "es6: import single component":
+      "prefix": "im"
+      "body": """
+        import ${1} from '${2}'
+      """
+
+    "es6: import components":
+      "prefix": "ims"
+      "body": """
+        import { ${1} } from '${2}'
+      """
+
+    "es6: export component":
+      "prefix": "exp"
+      "body": """
+        export default ${1}
+      """
+
+    "es6: console.log()":
+      "prefix": "cl"
+      "body": """
+        console.log( ${1} )
+      """
+}

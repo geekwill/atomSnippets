@@ -1,0 +1,16 @@
+{
+  ".source.js":
+    "router: import react-router":
+      "prefix": "irouter"
+      "body": """
+        import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
+      """
+
+    "router: component Route":
+      "prefix": "croute"
+      "body": """
+        <Route path="${1}" component={${2}} >
+          ${3}
+        </Route>
+      """
+}

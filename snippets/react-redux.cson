@@ -1,0 +1,22 @@
+{
+  ".source.js":
+    "react-redux: import react-redux":
+      "prefix": "irouter"
+      "body": """
+        import { connect } from 'react-redux'
+      """
+
+    "react-redux: function react-redux connect":
+      "prefix": "icrr"
+      "body": """
+        function mapStateToProps(state) {
+          return ${1}
+        }
+
+        function mapDispatchToProps(dispatch) {
+          return { actions: bindActionCreators(${2}, dispatch) }
+        }
+
+        export default connect(mapStateToProps, mapDispatchToProps)(${3})
+      """
+}
