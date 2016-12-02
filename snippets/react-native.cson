@@ -2,11 +2,30 @@
   ".source.js":
 
     "reactnative: init reactnative":
-      "prefix": "imr"
+      "prefix": "imrn"
       "body": """
         import React, { Component } from 'react';
-        import { View, Text, Image${1} } from 'react-native';
-        ${2}
+        import { View, Text, Image, StyleSheet, PixelRatio } from 'react-native';
+
+        export default class ${1} extends Component{
+          constructor(props){
+            super(props);
+            this.state = {
+              ${2}
+            }
+          }
+          render(
+            return(
+              <View>
+                <Text>${1}</Text>
+              </View>
+            );
+          )
+        }
+
+        const styles = StyleSheet.create({
+          ${3}
+        });
       """
 
     "reactnative: export default class component":
