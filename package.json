@@ -1,6 +1,6 @@
 {
   "name": "atom-custom-snippets",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "a atom snippets role in reactjs reactnative redux react-router, es6 syntax",
   "main": "index.js",
   "scripts": {
