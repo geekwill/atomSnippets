@@ -11,4 +11,4 @@
 * react-native
 * js(部分常用的原生的 js)
 
-欢迎进入我的播客一起学习 [geekwill](http://www.geekcode.me)
+欢迎进入我的播客一起学习 [Blog](http://www.geekcode.me)
